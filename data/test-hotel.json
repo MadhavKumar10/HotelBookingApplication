@@ -1,0 +1,412 @@
+[
+  {
+    "_id": {
+      "$oid": "6566072befbb78591fadc606"
+    },
+    "userId": "6554f2ecd4f07417501dcbf1",
+    "name": "Dublin Getaways",
+    "city": "Dublin",
+    "country": "Ireland",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies sodales rhoncus. Mauris nisl sapien, interdum vitae mi et, porttitor faucibus velit. Duis quis nisl feugiat, volutpat leo a, efficitur lectus. Praesent vulputate turpis nec sapien vulputate tincidunt. Maecenas vitae aliquam ipsum. Ut ultricies hendrerit ante eget vehicula. Cras sit amet semper odio. Pellentesque lacinia, sapien a tristique ultrices, augue diam interdum nulla, non porttitor ligula nisl at nibh. Aenean in lobortis velit, sed hendrerit mi. Nam leo sem, laoreet quis diam eget, euismod lobortis purus. Aenean laoreet dui vel diam pulvinar viverra.\r\n\r\nFusce non nisi laoreet, egestas felis dignissim, tempor arcu. Ut feugiat nibh vel sodales suscipit. Phasellus ultricies eget eros id bibendum. Nunc lobortis orci interdum felis bibendum pretium. Vivamus placerat ligula a consequat ultricies. Etiam aliquam nibh vitae efficitur finibus. Duis iaculis tristique sapien. Aenean vel sollicitudin dolor. Aliquam vel nisl id augue pellentesque aliquet.\r\n\r\nFusce a egestas urna. Fusce eu sapien viverra, feugiat risus nec, accumsan enim. Donec vel sapien blandit, semper est non, congue ante. Sed lectus nulla, efficitur nec tortor nec, sollicitudin varius massa. Donec lectus mauris, vehicula ut semper eget, pharetra maximus lacus. Pellentesque pharetra facilisis luctus. Nunc lacus sapien, gravida vitae egestas in, mattis in tellus.",
+    "type": "All Inclusive",
+    "adultCount": {
+      "$numberInt": "2"
+    },
+    "childCount": {
+      "$numberInt": "3"
+    },
+    "facilities": [
+      "Airport Shuttle",
+      "Family Rooms",
+      "Non-Smoking Rooms",
+      "Spa"
+    ],
+    "pricePerNight": {
+      "$numberInt": "119"
+    },
+    "starRating": {
+      "$numberInt": "2"
+    },
+    "imageUrls": [
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185322/a4ypeock0piore5mbnyy.jpg",
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185322/vd9oude4cwkti7s9yp0y.jpg",
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185322/twxkbjmcoy4gzmtwc4li.jpg"
+    ],
+    "lastUpdated": {
+      "$date": {
+        "$numberLong": "1701185323228"
+      }
+    },
+    "__v": {
+      "$numberInt": "0"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6566072befbb78591fadc607"
+    },
+    "userId": "6554f2ecd4f07417501dcbf2",
+    "name": "Ocean Paradise Resort & Spa",
+    "city": "Miami",
+    "country": "United States",
+    "description": "Experience ultimate luxury at our beachfront paradise. Ocean Paradise Resort & Spa offers stunning ocean views, world-class amenities, and impeccable service. Our resort features multiple swimming pools, a full-service spa, and gourmet dining options. Each room is elegantly appointed with modern amenities and private balconies overlooking the Atlantic Ocean. Perfect for romantic getaways, family vacations, and corporate retreats. Our dedicated staff ensures your every need is met with personalized service and attention to detail.",
+    "type": "Beach Resort",
+    "adultCount": {
+      "$numberInt": "4"
+    },
+    "childCount": {
+      "$numberInt": "2"
+    },
+    "facilities": [
+      "Outdoor Pool",
+      "Spa",
+      "Fitness Center",
+      "Free WiFi",
+      "Parking",
+      "Beach Access",
+      "Restaurant",
+      "Bar"
+    ],
+    "pricePerNight": {
+      "$numberInt": "299"
+    },
+    "starRating": {
+      "$numberInt": "5"
+    },
+    "imageUrls": [
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185400/beach_resort1.jpg",
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185400/beach_resort2.jpg",
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185400/beach_resort3.jpg"
+    ],
+    "lastUpdated": {
+      "$date": {
+        "$numberLong": "1701185400000"
+      }
+    },
+    "__v": {
+      "$numberInt": "0"
+    }
+  },
+
+  {
+    "_id": {
+      "$oid": "6566072befbb78591fadc610"
+    },
+    "userId": "6554f2ecd4f07417501dcbf5",
+    "name": "Metropolitan Business Suites",
+    "city": "Tokyo",
+    "country": "Japan",
+    "description": "Designed for the modern business traveler, Metropolitan Business Suites offers sophisticated accommodations in Tokyo's financial district. Our hotel features state-of-the-art business facilities, high-speed internet, and soundproof rooms for optimal productivity. The executive lounge provides a perfect space for meetings or quiet work. After a busy day, unwind at our fitness center or enjoy authentic Japanese cuisine at our on-site restaurant. Convenient access to public transportation and major corporate offices.",
+    "type": "Business",
+    "adultCount": {
+      "$numberInt": "2"
+    },
+    "childCount": {
+      "$numberInt": "0"
+    },
+    "facilities": [
+      "Free WiFi",
+      "Business Center",
+      "Fitness Center",
+      "Non-Smoking Rooms",
+      "Airport Shuttle",
+      "Restaurant",
+      "Room Service",
+      "Concierge"
+    ],
+    "pricePerNight": {
+      "$numberInt": "249"
+    },
+    "starRating": {
+      "$numberInt": "4"
+    },
+    "imageUrls": [
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185550/business1.jpg",
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185550/business2.jpg",
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185550/business3.jpg"
+    ],
+    "lastUpdated": {
+      "$date": {
+        "$numberLong": "1701185550000"
+      }
+    },
+    "__v": {
+      "$numberInt": "0"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6566072befbb78591fadc608"
+    },
+    "userId": "6554f2ecd4f07417501dcbf3",
+    "name": "City Center Budget Inn",
+    "city": "London",
+    "country": "United Kingdom",
+    "description": "Conveniently located in the heart of London, City Center Budget Inn offers comfortable accommodations at affordable prices. Just steps away from major attractions, shopping districts, and public transportation. Our rooms are clean, cozy, and equipped with all essential amenities for a pleasant stay. Perfect for budget-conscious travelers who want to explore the city without breaking the bank. We offer 24-hour front desk service and complimentary breakfast to start your day right.",
+    "type": "Budget",
+    "adultCount": {
+      "$numberInt": "2"
+    },
+    "childCount": {
+      "$numberInt": "1"
+    },
+    "facilities": [
+      "Free WiFi",
+      "Family Rooms",
+      "Non-Smoking Rooms",
+      "24-Hour Front Desk",
+      "Luggage Storage"
+    ],
+    "pricePerNight": {
+      "$numberInt": "89"
+    },
+    "starRating": {
+      "$numberInt": "3"
+    },
+    "imageUrls": [
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185450/budget_hotel1.jpg",
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185450/budget_hotel2.jpg",
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185450/budget_hotel3.jpg"
+    ],
+    "lastUpdated": {
+      "$date": {
+        "$numberLong": "1701185450000"
+      }
+    },
+    "__v": {
+      "$numberInt": "0"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6566072befbb78591fadc609"
+    },
+    "userId": "6554f2ecd4f07417501dcbf4",
+    "name": "Alpine Mountain Lodge",
+    "city": "Aspen",
+    "country": "United States",
+    "description": "Nestled in the heart of the Rocky Mountains, Alpine Mountain Lodge offers a perfect escape into nature. Our rustic yet luxurious cabins feature stone fireplaces, wooden beams, and breathtaking mountain views. Enjoy hiking trails right from your doorstep, cozy up by the fire, or relax in our outdoor hot tub under the stars. Each cabin includes a fully equipped kitchen, comfortable living area, and private deck. Perfect for couples seeking romance or families wanting adventure in the great outdoors.",
+    "type": "Cabin",
+    "adultCount": {
+      "$numberInt": "6"
+    },
+    "childCount": {
+      "$numberInt": "4"
+    },
+    "facilities": [
+      "Fireplace",
+      "Hot Tub",
+      "Free WiFi",
+      "Parking",
+      "Kitchen",
+      "Pet Friendly",
+      "Mountain View",
+      "Hiking Trails"
+    ],
+    "pricePerNight": {
+      "$numberInt": "199"
+    },
+    "starRating": {
+      "$numberInt": "4"
+    },
+    "imageUrls": [
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185500/cabin1.jpg",
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185500/cabin2.jpg",
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185500/cabin3.jpg"
+    ],
+    "lastUpdated": {
+      "$date": {
+        "$numberLong": "1701185500000"
+      }
+    },
+    "__v": {
+      "$numberInt": "0"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6566072befbb78591fadc611"
+    },
+    "userId": "6554f2ecd4f07417501dcbf6",
+    "name": "Château Amour",
+    "city": "Paris",
+    "country": "France",
+    "description": "Experience romance and elegance at Château Amour, a charming boutique hotel in the heart of Paris. Each room is uniquely decorated with antique furniture, luxurious fabrics, and romantic touches. Enjoy stunning views of the Eiffel Tower from our rooftop terrace, indulge in couple's spa treatments, or take romantic strolls through nearby Montmartre. Our concierge can arrange private tours, romantic dinners, and special surprises to make your stay unforgettable. Perfect for honeymoons, anniversaries, and romantic getaways.",
+    "type": "Romantic",
+    "adultCount": {
+      "$numberInt": "2"
+    },
+    "childCount": {
+      "$numberInt": "0"
+    },
+    "facilities": [
+      "Spa",
+      "Restaurant",
+      "Room Service",
+      "Free WiFi",
+      "Concierge",
+      "Rooftop Terrace",
+      "Luxury Bathrooms",
+      "City Views"
+    ],
+    "pricePerNight": {
+      "$numberInt": "349"
+    },
+    "starRating": {
+      "$numberInt": "5"
+    },
+    "imageUrls": [
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185600/romantic1.jpg",
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185600/romantic2.jpg",
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185600/romantic3.jpg"
+    ],
+    "lastUpdated": {
+      "$date": {
+        "$numberLong": "1701185600000"
+      }
+    },
+    "__v": {
+      "$numberInt": "0"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6566072befbb78591fadc612"
+    },
+    "userId": "6554f2ecd4f07417501dcbf7",
+    "name": "Sunshine Family Resort",
+    "city": "Orlando",
+    "country": "United States",
+    "description": "The ultimate destination for family fun! Sunshine Family Resort offers something for everyone with multiple swimming pools, water slides, kids' clubs, and family entertainment. Located just minutes from major theme parks, our resort provides comfortable family suites, kid-friendly dining options, and endless activities. Parents can relax at the adult-only pool while kids enjoy supervised activities. Evening shows, character meet-and-greets, and family movie nights create unforgettable memories for the whole family.",
+    "type": "Family",
+    "adultCount": {
+      "$numberInt": "4"
+    },
+    "childCount": {
+      "$numberInt": "4"
+    },
+    "facilities": [
+      "Family Rooms",
+      "Outdoor Pool",
+      "Water Park",
+      "Kids Club",
+      "Restaurant",
+      "Free WiFi",
+      "Parking",
+      "Entertainment",
+      "Game Room"
+    ],
+    "pricePerNight": {
+      "$numberInt": "179"
+    },
+    "starRating": {
+      "$numberInt": "4"
+    },
+    "imageUrls": [
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185650/family1.jpg",
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185650/family2.jpg",
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185650/family3.jpg"
+    ],
+    "lastUpdated": {
+      "$date": {
+        "$numberLong": "1701185650000"
+      }
+    },
+    "__v": {
+      "$numberInt": "0"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6566072befbb78591fadc613"
+    },
+    "userId": "6554f2ecd4f07417501dcbf8",
+    "name": "Alpine Peak Ski Lodge",
+    "city": "Whistler",
+    "country": "Canada",
+    "description": "Located slopeside at one of North America's premier ski destinations, Alpine Peak Ski Lodge offers ski-in/ski-out access to world-class terrain. Our lodge features cozy rooms with mountain views, heated boot dryers, and a rustic stone fireplace in the lobby. After a day on the slopes, relax in our outdoor heated pool or enjoy après-ski drinks at our mountain-view bar. Our ski valet service and equipment rentals make your ski vacation completely hassle-free. Perfect for ski enthusiasts and winter sports lovers.",
+    "type": "Ski Resort",
+    "adultCount": {
+      "$numberInt": "4"
+    },
+    "childCount": {
+      "$numberInt": "2"
+    },
+    "facilities": [
+      "Ski-in/Ski-out",
+      "Heated Pool",
+      "Spa",
+      "Restaurant",
+      "Bar",
+      "Ski Storage",
+      "Equipment Rental",
+      "Fireplace",
+      "Mountain Views"
+    ],
+    "pricePerNight": {
+      "$numberInt": "329"
+    },
+    "starRating": {
+      "$numberInt": "4"
+    },
+    "imageUrls": [
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185700/ski1.jpg",
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185700/ski2.jpg",
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185700/ski3.jpg"
+    ],
+    "lastUpdated": {
+      "$date": {
+        "$numberLong": "1701185700000"
+      }
+    },
+    "__v": {
+      "$numberInt": "0"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6566072befbb78591fadc614"
+    },
+    "userId": "6554f2ecd4f07417501dcbf9",
+    "name": "Paws & Stay Motel",
+    "city": "Portland",
+    "country": "United States",
+    "description": "Your furry friends are family too! Paws & Stay Motel welcomes pets of all sizes with open arms. We offer designated pet-friendly rooms with easy outdoor access, pet beds, food bowls, and treats. Our property features a fenced dog park, pet washing station, and walking trails. Located near several dog-friendly parks and attractions. Additional pet amenities include waste bags, toys, and recommendations for local pet services. Travel with your pets without compromise at our welcoming establishment.",
+    "type": "Pet Friendly",
+    "adultCount": {
+      "$numberInt": "2"
+    },
+    "childCount": {
+      "$numberInt": "1"
+    },
+    "facilities": [
+      "Pet Friendly",
+      "Free WiFi",
+      "Parking",
+      "Non-Smoking Rooms",
+      "Dog Park",
+      "Pet Washing Station",
+      "Outdoor Access",
+      "Family Rooms"
+    ],
+    "pricePerNight": {
+      "$numberInt": "99"
+    },
+    "starRating": {
+      "$numberInt": "3"
+    },
+    "imageUrls": [
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185750/pet1.jpg",
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185750/pet2.jpg",
+      "http://res.cloudinary.com/dr55yjjx4/image/upload/v1701185750/pet3.jpg"
+    ],
+    "lastUpdated": {
+      "$date": {
+        "$numberLong": "1701185750000"
+      }
+    },
+    "__v": {
+      "$numberInt": "0"
+    }
+  }
+]

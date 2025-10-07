@@ -1,0 +1,26 @@
+{
+  "name": "mern-booking-app",
+  "version": "1.0.0",
+  "description": "This guide will walk you through the process of setting up the MERN Booking App on your local machine.",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisblakely01/mern-booking-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/chrisblakely01/mern-booking-app/issues"
+  },
+  "homepage": "https://github.com/chrisblakely01/mern-booking-app#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.5.2"
+  },
+  "dependencies": {
+    "mern-booking-app": "file:"
+  }
+}
