@@ -1,121 +1,109 @@
-# Setting Up the MERN Booking App
+Setting Up the Java Full Stack Booking App
+This guide will walk you through the process of setting up the Java Full Stack Booking App on your local machine.
 
-This guide will walk you through the process of setting up the MERN Booking App on your local machine.
+Prerequisites
+Before you begin, ensure you have the following installed:
 
-## Prerequisites
+Java JDK 17 or higher
+Maven 3.8+
+MySQL 8.0 or PostgreSQL 14+
 
-Before you begin, ensure you have Node.js installed on your system.
-
-## Cloning the Repository
-
+Cloning the Repository
 Start by cloning the repository to your local machine:
 
-```bash
-git clone https://github.com/chrisblakely01/mern-booking-app.git
-cd mern-booking-app
-```
+bash
+git clone https://github.com/your-username/java-booking-app.git
+cd java-booking-app
+Backend Configuration (Spring Boot)
+1. Database Setup
+MySQL/PostgreSQL: Install and create a database named hotel_booking
 
-## Backend Configuration
+Update the database credentials in src/main/resources/application.properties
 
-1. **Environment Files**: Navigate to the `backend` folder and create two files: `.env` and `.env.e2e`. Add the following contents to both files:
+2. Environment Configuration
+Navigate to the backend folder and update src/main/resources/application.properties:
 
-    ```plaintext
-    MONGODB_CONNECTION_STRING=
+properties
+# Database Configuration
+spring.datasource.url=jdbc:mysql://localhost:3306/hotel_booking
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 
-    JWT_SECRET_KEY=
-    FRONTEND_URL=
+# JWT Configuration
+jwt.secret=your_jwt_secret_key_here_min_256_bits
+jwt.expiration=86400000
 
-    # Cloudinary Variables
-    CLOUDINARY_CLOUD_NAME=
-    CLOUDINARY_API_KEY=
-    CLOUDINARY_API_SECRET=
+# Server Configuration
+server.port=8080
+server.servlet.context-path=/api
 
-    # Stripe
-    STRIPE_API_KEY=
-    ```
+# Stripe Configuration
+stripe.secret-key=your_stripe_secret_key
+stripe.public-key=your_stripe_public_key
 
-2. **MongoDB Setup**: 
-    - Sign up for an account at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
-    - Create a new cluster and follow the instructions to set up a new database.
-    - Once set up, obtain your MongoDB connection string and add it to the `MONGODB_CONNECTION_STRING` variable in your `.env` files.
-    - For the `.env.e2e` setup see "running automated tests" below
+# Frontend URL for CORS
+app.frontend-url=http://localhost:3000
 
-3. **Cloudinary Setup**:
-    - Create an account at [Cloudinary](https://cloudinary.com/).
-    - Navigate to your dashboard to find your cloud name, API key, and API secret.
-    - Add these details to the respective `CLOUDINARY_*` variables in your `.env` files.
+# File Upload Configuration
+spring.servlet.multipart.max-file-size=10MB
+spring.servlet.multipart.max-request-size=10MB
 
-4. **Stripe Setup**:
-    - Sign up for a Stripe account at [Stripe](https://stripe.com/).
-    - Find your API keys in the Stripe dashboard.
-    - Add your Stripe API key to the `STRIPE_API_KEY` variable in your `.env` files.
-  
-5. **JWT_SECRET_KEY**:
-    - This just needs to be any long, random string. You can google "secret key generator".
-
-7. **Frontend URL**:
-    - The `FRONTEND_URL` should point to the URL where your frontend application is running (typically `http://localhost:3000` if you're running it locally).
-  
-
-## Frontend Configuration
-
-1. **Environment Files**: Navigate to the `frontend` folder and create a file: `.env`:
-
-    ```plaintext
-    VITE_API_BASE_URL=
-    VITE_STRIPE_PUB_KEY=
-    ```
-
-5. **VITE_API_BASE_URLL**:
-    - The `VITE_API_BASE_URL` should point to the URL where your backend application is running (typically `http://localhost:7000` if you're running it locally).
-
-## Running the Application
-
-1. **Backend**:
-    - Navigate to the `backend` directory.
-    - Install dependencies: `npm install`.
-    - Start the server: `npm start`.
-
-2. **Frontend**:
-    - Open a new terminal and navigate to the `frontend` directory.
-    - Install dependencies: `npm install`.
-    - Start the frontend application: `npm run dev`.
-    - The application should now be running on `http://localhost:5173` but verify this in your command line terminal  
+# Logging
+logging.level.com.yourpackage=DEBUG
+3. External Services Setup
 
 
-## Running Automated Tests
+Cloudinary Setup:
 
-1. **MongoDB Setup**: 
-    - You will ideally want to create a new mongoDb database for your tests to run against. This is to keep the data stable 
-    - Sign up for an account at [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
-    - Create a new project (e.g e2e tests)
-    - Create a new cluster and follow the instructions to set up a new database.
-    - Once set up, obtain your MongoDB connection string and add it to the `MONGODB_CONNECTION_STRING` variable in your `.env.e2e` file.
-      
-2. **Importing Test Data into MongoDB**:
+Create an account at Cloudinary
+Add these properties to application.properties:
 
-    - The repository contains a `data` folder at the root, which includes JSON files for a test user and a test hotel. You can import these into your MongoDB collections to quickly set up test data.
-    - **Locate the Test User File**: In the `data` folder, find the file containing the test user data (likely named something like `test-users.json`).
-    - **Open MongoDB Compass**: Launch MongoDB Compass and connect to your database.
-    - **Select the Database**: In Compass, select the database you are using for the automated tests (created in step 1).
-    - **Import User Data**:
-        - Navigate to the `users` collection within your database. Create it if it doesn't exist
-        - Click on the "Add Data" button and select "Import File".
-        - Browse to the location of your `test-users.json` file and select it.
-        - Choose JSON as the file format and click "Import".
-        - The test user data will be added to the `users` collection.
-        - user login: 1@1.com/password123
-    -  **Locate the Test Hotel File**:
-        - Navigate to the `hotels` collection within your database. Create it if it doesn't exist
-        - Repeat the import process as you did for the user data, but this time select the `test-hotel.json` file.
-        - Ensure the file format is set to JSON and click "Import".
-        - The test hotel data will be added to the `hotels` collection.
- 
-3. **Running tests**    
-    - In VS Code install the [Playwright extension](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright)
-    - Navigate to the `e2e-tests` directory.
-    - Install dependencies: `npm install`.
-    - Start the frontend and backend server using the steps above
-    - [Using the Playwright extension to run the tests](https://playwright.dev/docs/getting-started-vscode#running-tests)
+properties
+cloudinary.cloud-name=your_cloud_name
+cloudinary.api-key=your_api_key
+cloudinary.api-secret=your_api_secret
+Stripe Setup:
 
+Sign up at Stripe
 
+Add your test keys to the Stripe configuration above
+
+Frontend Configuration (React)
+1. Environment Setup
+Navigate to the frontend folder and create a .env file:
+
+plaintext
+VITE_API_BASE_URL=http://localhost:8080/api
+VITE_STRIPE_PUB_KEY=your_stripe_publishable_key
+Running the Application
+Backend (Spring Boot)
+Navigate to the backend directory:
+
+bash
+cd backend
+Run the application:
+
+bash
+# Using Maven
+mvn spring-boot:run
+
+# Or build and run
+mvn clean package
+java -jar target/booking-app-0.0.1-SNAPSHOT.jar
+The backend will start on http://localhost:8080
+
+Frontend (React)
+Open a new terminal and navigate to frontend:
+
+bash
+cd frontend
+Install dependencies and start:
+
+bash
+npm install
+npm run dev
+The frontend will start on http://localhost:3000
+
+This Java Full Stack setup provides a robust, scalable foundation for a hotel booking application with modern development practices and comprehensive documentation.
